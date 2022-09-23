@@ -21,7 +21,7 @@ int main()
 		sleep(10);
 		printf("\nThis is Child Process....\n"); 
 		printf("PID: %d\n",getpid());
-		
+		printf("Parent PID : %d\n",getppid());
 	}
 	return 0;
 }
