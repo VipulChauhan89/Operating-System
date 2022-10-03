@@ -38,7 +38,8 @@ int main()
 	st arr[n];
 	
 	for(int i=0;i<n;i++)
-	{	printf("For process %d Enter Arrival time and Burst time respectively : ",i+1);
+	{	
+		printf("For process %d Enter Arrival time and Burst time respectively : ",i+1);
 		arr[i].pid=i+1;
 		scanf("%d%d",&arr[i].at,&arr[i].bt);
 	}
