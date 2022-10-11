@@ -1,3 +1,9 @@
+/*
+	Write a C program to demonstrate First Come First Served (FCFS).
+	
+	In FCFS the job which first comes in the ready queue will get the CPU first and the lesser the arrival time of the job the sooner will the job get CPU. It may cause the problem of starvation if the burst time of the first process is the longest among all jobs. 
+
+*/
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct process
@@ -52,14 +58,7 @@ int main()
 			arr[0].st=arr[0].at;					 	//start time
 		}
 		arr[i].st=(arr[i-1].ct>=arr[i].at)?arr[i-1].ct:arr[i].at;  	//start time
-		if(arr[i].at>=arr[i-1].ct)
-		{
-			arr[i].ct=arr[i].at+arr[i].bt;    	//completion time
-		}
-		else
-		{
-			arr[i].ct=arr[i-1].ct+arr[i].bt;  	//completion time
-		}
+		arr[i].ct=arr[i].st+arr[i].bt;             //completion time
 		arr[i].rt=arr[i].st-arr[i].at;    	//response time
 		arr[i].tat=arr[i].ct-arr[i].at;		//turn around time
 		arr[i].wt=arr[i].tat-arr[i].bt;		//waiting time
