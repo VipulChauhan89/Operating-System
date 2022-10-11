@@ -1,3 +1,8 @@
+/*
+	Write a C program to demonstrate Shortest Remaining Time First (SRTF).
+
+	In SRTF the execution of the process can be stopped after certain amount of time. At the arrival of every process short term scheduler schedules the process based on the least remaining burst time. Once all the processes are available in the ready queue then no preemption will be done and the algorithm will work same as SJF scheduling.
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<limits.h>
