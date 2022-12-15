@@ -51,6 +51,7 @@ void fifo(int string[20],int n,int size)
 int main()
 {
 	int n,no_frames;
+	printf("\nName - Vipul Chauhan\nSection - A\nStudent id - 20011016\n\n");
 	printf("Enter the number of symbols you want to enter : ");
 	scanf("%d",&n);
     int page[n];
